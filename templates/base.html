@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
 {% load static %}
+<html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <title>NEWSROOM - Free Bootstrap Magazine Template</title>
+    <title>NEWSROOM</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -29,18 +30,6 @@
     <!-- Topbar Start -->
     <div class="container-fluid">
         <div class="row align-items-center bg-light px-lg-5">
-            <div class="col-12 col-md-8">
-                <div class="d-flex justify-content-between">
-                    <div class="bg-primary text-white text-center py-2" style="width: 100px;">Tranding</div>
-                    <div class="owl-carousel owl-carousel-1 tranding-carousel position-relative d-inline-flex align-items-center ml-3" style="width: calc(100% - 100px); padding-left: 90px;">
-                        <div class="text-truncate"><a class="text-secondary" href="">Labore sit justo amet eos sed, et sanctus dolor diam eos</a></div>
-                        <div class="text-truncate"><a class="text-secondary" href="">Gubergren elitr amet eirmod et lorem diam elitr, ut est erat Gubergren elitr amet eirmod et lorem diam elitr, ut est erat</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 text-right d-none d-md-block">
-                Monday, January 01, 2045
-            </div>
         </div>
         <div class="row align-items-center py-2 px-lg-5">
             <div class="col-lg-4">
@@ -68,16 +57,6 @@
             <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
                 <div class="navbar-nav mr-auto py-0">
                     <a href="/" class="nav-item nav-link active">Home</a>
-                    <a href="/category" class="nav-item nav-link">Categories</a>
-                    <a href="/single" class="nav-item nav-link">Single News</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
-                        <div class="dropdown-menu rounded-0 m-0">
-                            <a href="#" class="dropdown-item">Menu item 1</a>
-                            <a href="#" class="dropdown-item">Menu item 2</a>
-                            <a href="#" class="dropdown-item">Menu item 3</a>
-                        </div>
-                    </div>
                     <a href="/contact" class="nav-item nav-link">Contact</a>
                 </div>
                 <div class="input-group ml-auto" style="width: 100%; max-width: 300px;">
@@ -91,14 +70,11 @@
         </nav>
     </div>
     <!-- Navbar End -->
-
     {% block content %}
 
 
-
     {% endblock %}
-
- <!-- Footer Start -->
+<!-- Footer Start -->
     <div class="container-fluid bg-light pt-5 px-sm-3 px-md-5">
         <div class="row">
             <div class="col-lg-3 col-md-6 mb-5">
@@ -116,23 +92,6 @@
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
                 <h4 class="font-weight-bold mb-4">Categories</h4>
-                <div class="d-flex flex-wrap m-n1">
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Politics</a>
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Business</a>
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Corporate</a>
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Sports</a>
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Health</a>
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Education</a>
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Science</a>
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Technology</a>
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Foods</a>
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Entertainment</a>
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Travel</a>
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Lifestyle</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="font-weight-bold mb-4">Tags</h4>
                 <div class="d-flex flex-wrap m-n1">
                     <a href="" class="btn btn-sm btn-outline-secondary m-1">Politics</a>
                     <a href="" class="btn btn-sm btn-outline-secondary m-1">Business</a>
@@ -169,3 +128,24 @@
         </p>
     </div>
     <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-dark back-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="{% static 'mail/jqBootstrapValidation.min.js' %}"></script>
+    <script src="{% static 'mail/contact.js' %}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
